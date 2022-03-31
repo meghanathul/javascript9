@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><b><u>Object</u></b></h1>
+    <p>1. non-premitive datatype <br>
+    2. object are in key value pairs</p>
+<hr><hr>
+<h2> using {}</h2>
+<pre>
+    syn:-
+     let person={
+         name:'Meghana',
+         age:22,
+         contact:8876567543,
+         place:'Amravati'
+     }
+     console.log(person)
+     console.log(person['contact'])  <span>//can axcess</span>
+</pre>
+<hr>
+
+<h2> this</h2>
+<pre>
+   syn:- 
+let person={
+    name:'Meghana',
+    age:22,
+    contact:8876567543,
+    place:'Amravati',
+
+    display:function(){ <span> //method</span>
+        console.log('my age is'+this.age+'my name is'+this.name)
+    }
+}
+person.display()
+</pre>
+<hr>
+
+<h2>object.key</h2>
+<pre>syn:-
+ const demo=Object.keys()
+ console.log(demo)
+</pre>
+<hr>
+
+<h2>object.values</h2>
+<pre> syn:-  
+const demo= Object.values(person)
+console.log(demo)
+</pre>
+<hr>
+
+<h2>object.create</h2> 
+<span> Allow us to create object by taking reference of an existing object.</span>
+<pre> syn:-   
+const flag=Object.create(person)
+console.log(flag)
+</pre>
+    <script src="./script.js"></script>
+</body>
+</html>
